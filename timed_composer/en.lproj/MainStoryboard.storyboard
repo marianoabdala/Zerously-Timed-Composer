@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="TrU-ne-mAA">
+    <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <development defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller - Timed Composer-->
+        <scene sceneID="RyX-he-Q6V">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F3X-jL-pPE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="3G8-eU-BBo" customClass="ZYViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="VVz-kF-aK4">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="GRu-Nr-LrV">
+                                <string key="headerTitle">When you tap the 'Compose'  ➚ button you'll have 30 seconds before a local push notification is received, but a MFMailComposeViewController will be shown immediately.</string>
+                                <cells/>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="3G8-eU-BBo" id="839-Xe-od8"/>
+                            <outlet property="delegate" destination="3G8-eU-BBo" id="g7L-Be-mMC"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Timed Composer" id="FaM-50-Owk">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Sfz-LB-xu4"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="qvU-Sb-aAd">
+                            <connections>
+                                <action selector="composeButtonTapped:" destination="3G8-eU-BBo" id="71i-6E-2Fs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="24A-g7-pQc" kind="push" identifier="pushNotificationDetailSegue" id="dA9-PT-bsj"/>
+                    </connections>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="696" y="34"/>
+        </scene>
+        <!--Table View Controller - Push notification detail-->
+        <scene sceneID="AtM-s4-cB1">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lr2-Hu-Vzh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="24A-g7-pQc" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="obE-2Y-oQu">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="If you are seeing this, it means you received a local push notification, tapped 'View' and then 'Delete'." id="Ide-Sy-UwG">
+                                <cells/>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="24A-g7-pQc" id="jWs-M1-oUh"/>
+                            <outlet property="delegate" destination="24A-g7-pQc" id="Umc-ZE-Rew"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Push notification detail" id="cdl-dE-Etn"/>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="1195" y="34"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="myq-F0-B0M">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xfl-H2-yE3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="TrU-ne-mAA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="IkW-pp-XkQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3G8-eU-BBo" kind="relationship" relationship="rootViewController" id="ALh-Zy-Kom"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="200" y="34"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="ZYViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ZYViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="composeButtonTapped:"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

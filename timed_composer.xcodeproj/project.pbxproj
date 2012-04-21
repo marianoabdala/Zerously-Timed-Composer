@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		31CD279D153B832900712F7D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31CD279C153B832900712F7D /* UIKit.framework */; };
+		31CD279F153B832900712F7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31CD279E153B832900712F7D /* Foundation.framework */; };
+		31CD27A1153B832900712F7D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31CD27A0153B832900712F7D /* CoreGraphics.framework */; };
+		31CD27A7153B832900712F7D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31CD27A5153B832900712F7D /* InfoPlist.strings */; };
+		31CD27A9153B832900712F7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 31CD27A8153B832900712F7D /* main.m */; };
+		31CD27AD153B832900712F7D /* ZYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31CD27AC153B832900712F7D /* ZYAppDelegate.m */; };
+		31CD27B0153B832900712F7D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31CD27AE153B832900712F7D /* MainStoryboard.storyboard */; };
+		31CD27B3153B832900712F7D /* ZYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31CD27B2153B832900712F7D /* ZYViewController.m */; };
+		31EDE303153B873E0081CA6E /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31EDE302153B873E0081CA6E /* MessageUI.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		31CD2798153B832900712F7D /* timed_composer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = timed_composer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		31CD279C153B832900712F7D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		31CD279E153B832900712F7D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		31CD27A0153B832900712F7D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		31CD27A4153B832900712F7D /* timed_composer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "timed_composer-Info.plist"; sourceTree = "<group>"; };
+		31CD27A6153B832900712F7D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		31CD27A8153B832900712F7D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		31CD27AA153B832900712F7D /* timed_composer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "timed_composer-Prefix.pch"; sourceTree = "<group>"; };
+		31CD27AB153B832900712F7D /* ZYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYAppDelegate.h; sourceTree = "<group>"; };
+		31CD27AC153B832900712F7D /* ZYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYAppDelegate.m; sourceTree = "<group>"; };
+		31CD27AF153B832900712F7D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		31CD27B1153B832900712F7D /* ZYViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYViewController.h; sourceTree = "<group>"; };
+		31CD27B2153B832900712F7D /* ZYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYViewController.m; sourceTree = "<group>"; };
+		31EDE302153B873E0081CA6E /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		31CD2795153B832900712F7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31EDE303153B873E0081CA6E /* MessageUI.framework in Frameworks */,
+				31CD279D153B832900712F7D /* UIKit.framework in Frameworks */,
+				31CD279F153B832900712F7D /* Foundation.framework in Frameworks */,
+				31CD27A1153B832900712F7D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31CD278D153B832900712F7D = {
+			isa = PBXGroup;
+			children = (
+				31CD27A2153B832900712F7D /* timed_composer */,
+				31CD279B153B832900712F7D /* Frameworks */,
+				31CD2799153B832900712F7D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		31CD2799153B832900712F7D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31CD2798153B832900712F7D /* timed_composer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31CD279B153B832900712F7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31EDE302153B873E0081CA6E /* MessageUI.framework */,
+				31CD279C153B832900712F7D /* UIKit.framework */,
+				31CD279E153B832900712F7D /* Foundation.framework */,
+				31CD27A0153B832900712F7D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		31CD27A2153B832900712F7D /* timed_composer */ = {
+			isa = PBXGroup;
+			children = (
+				31CD27AB153B832900712F7D /* ZYAppDelegate.h */,
+				31CD27AC153B832900712F7D /* ZYAppDelegate.m */,
+				31CD27AE153B832900712F7D /* MainStoryboard.storyboard */,
+				31CD27B1153B832900712F7D /* ZYViewController.h */,
+				31CD27B2153B832900712F7D /* ZYViewController.m */,
+				31CD27A3153B832900712F7D /* Supporting Files */,
+			);
+			path = timed_composer;
+			sourceTree = "<group>";
+		};
+		31CD27A3153B832900712F7D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				31CD27A4153B832900712F7D /* timed_composer-Info.plist */,
+				31CD27A5153B832900712F7D /* InfoPlist.strings */,
+				31CD27A8153B832900712F7D /* main.m */,
+				31CD27AA153B832900712F7D /* timed_composer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		31CD2797153B832900712F7D /* timed_composer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31CD27B6153B832900712F7D /* Build configuration list for PBXNativeTarget "timed_composer" */;
+			buildPhases = (
+				31CD2794153B832900712F7D /* Sources */,
+				31CD2795153B832900712F7D /* Frameworks */,
+				31CD2796153B832900712F7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = timed_composer;
+			productName = timed_composer;
+			productReference = 31CD2798153B832900712F7D /* timed_composer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		31CD278F153B832900712F7D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ZY;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = Zerously.com;
+			};
+			buildConfigurationList = 31CD2792153B832900712F7D /* Build configuration list for PBXProject "timed_composer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 31CD278D153B832900712F7D;
+			productRefGroup = 31CD2799153B832900712F7D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				31CD2797153B832900712F7D /* timed_composer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		31CD2796153B832900712F7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31CD27A7153B832900712F7D /* InfoPlist.strings in Resources */,
+				31CD27B0153B832900712F7D /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		31CD2794153B832900712F7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31CD27A9153B832900712F7D /* main.m in Sources */,
+				31CD27AD153B832900712F7D /* ZYAppDelegate.m in Sources */,
+				31CD27B3153B832900712F7D /* ZYViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		31CD27A5153B832900712F7D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31CD27A6153B832900712F7D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		31CD27AE153B832900712F7D /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31CD27AF153B832900712F7D /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		31CD27B4153B832900712F7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		31CD27B5153B832900712F7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		31CD27B7153B832900712F7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "timed_composer/timed_composer-Prefix.pch";
+				INFOPLIST_FILE = "timed_composer/timed_composer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		31CD27B8153B832900712F7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "timed_composer/timed_composer-Prefix.pch";
+				INFOPLIST_FILE = "timed_composer/timed_composer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		31CD2792153B832900712F7D /* Build configuration list for PBXProject "timed_composer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31CD27B4153B832900712F7D /* Debug */,
+				31CD27B5153B832900712F7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31CD27B6153B832900712F7D /* Build configuration list for PBXNativeTarget "timed_composer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31CD27B7153B832900712F7D /* Debug */,
+				31CD27B8153B832900712F7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 31CD278F153B832900712F7D /* Project object */;
+}
